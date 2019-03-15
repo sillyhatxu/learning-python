@@ -11,3 +11,11 @@ class Student:
             return True
         else:
             return False
+
+    def to_json(self):
+        return {
+            'name':self.name,
+            'major':self.major,
+            'gpa':self.gpa,
+            'is_on_probation':self.is_on_probation,
+        }

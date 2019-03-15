@@ -1,7 +1,27 @@
 from class_object.Student import Student
+import json
+
+person = {
+    'first_name': "John",
+    "isAlive": True,
+    "age": 27,
+    "address": {
+        "streetAddress": "21 2nd Street",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10021-3100"
+    },
+    "hasMortgage": None
+}
+
+data = json.dumps(person)   # serialize
+
+print(data)
 
 student1 = Student("Jim", "Business", 3.8, False)
 student2 = Student("Pam", "Art", 2.5, True)
+
+print(student1.to_json())
 
 print(student1.gpa)
 print(student2.gpa)

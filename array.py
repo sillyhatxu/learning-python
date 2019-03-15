@@ -8,7 +8,7 @@ print(friends)
 
 lucky_numbers = [4, 8, 15, 16, 23, 42]
 bad_src = ["heihei", "haha", "hehe"]
-
+bad_src
 friends.extend(lucky_numbers)
 print(friends)
 
@@ -47,3 +47,9 @@ print(coordinates[0])
 coordinates = [(4, 5),(6,7),(80,34)]
 print(coordinates)
 print(coordinates[0])
+
+L = list()
+L.append(1)
+L.append(2)
+L.append(3)
+print(L)

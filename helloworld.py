@@ -34,6 +34,7 @@ len_src = "abcdefghijklmn"
 print(len(len_src))
 print(len_src[0])
 print(len_src[13])
+print(len_src[1:4])
 print("-----------------------")
 
 print(len_src.index("b"))
