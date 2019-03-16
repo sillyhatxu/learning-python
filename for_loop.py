@@ -7,6 +7,9 @@ print("----------")
 for name in friends:
     print(name)
 print("----------")
+for index, name in enumerate(friends):
+    print(index, name)
+print("----------")
 for index in range(10):
     print(index)
 print("----------")
